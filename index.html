@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- Jessica Kincaid
+    December 8, 2024
+    -->
+
 <head>
    <meta charset="UTF-8">
 
@@ -14,60 +18,72 @@
    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div id="menu">
-    <section id="social">
-        <h1 id="top">MneMonocle</h1>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>MneMonocle</h1>
+    <h2>Augmented Reality for Everyone.</h2>
+  </div>
   
-  <!-- Navigation Bar -->
-        <div class="navbar">
-            <a href="#home">Home</a> 
-            <a href="#content">Content</a> 
-            <a href="#about">About</a> 
-        </div>
-
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Content</a>
+        <a href="#">About</a>
+      </div>
    
+    <!-- jQuery accordian-style animation for detailed content -->
+    <nav id="navigation">
+       <div class="heading">
+        <h3 class="heading">Your new best friend.</h3>
+        <img class="glasses" src="./img/MneMonocle.png" />
 
-    <!-- Insert jQuery accordian-style animation -->
-
-    <ul id="accordion">
-        <li class="active">
-           Augmented Reality for Everyone. 
-            <ul>
-                <li><p>A wearable "mnemonic device”.</p></li>    
-                <li><p>When we can remember a face, but not the name, or when we arrive at the grocery store and realize we have forgotten our lists, the MneMonocle is our friend.</p></li>
-            </ul>
-    </li>
-    <li>
-        Ingenious.
-        <ul>
-            <li><p>The MneMonocle responds to a person’s eye movements, verbal cues, and gestures. It can sense when we are trying to remember something because it will interpret the direction of our eye glances through what is called neuro-linguistic programming, (NLP).</p></li>
-        </ul>
-    </li>
-    <li>Visionary.
-        <ul>
-            <li></li>
-            <li><p>The MneMonocle interprets the wearer’s eye movements in combination with the images taken in through its camera and the sounds received through the hearing aid.</p></li>
-        </ul>
-    </li>
-    <li>
-        Your compassionate friend for aging in place.
-        <ul>
-            <li></li>
-            <li>
-            <p id="comp">The MneMonocle supports a lifestyle for seniors who want to sustain their independence, and for their families who need extra caregiving support.</p></li>
-        </ul>
-</li>
-    </ul>
-</section>
+      </div class="main">
+         <ul id="accordion">
+            <li class="card-title">
+               <p>Ingenious.</p>
+               <ul class="card-body">
+                  <li><p>The “mnemonic device” that responds to a person’s eye movements, verbal cues, and gestures. It can sense when we are trying to remember something because it will interpret the direction of our eye glances through what is called neuro-linguistic programming, (NLP).</p></li>
+               </ul>
+            </li>
+            <li class="card">
+               <p class="card-title">Visionary.</p>
+               <ul class="card-body">
+                  <li><p>The MneMonocle interprets the wearer’s eye movements in combination with the images taken in through its camera and the sounds received through the hearing aid.</p></li>
+               </ul>
+            </li>
+            <li class="card">
+               <p class="card-title">A Guardian.</p>
+               <ul class="card-body">
+                  <li><p>Ideal for seniors who want to sustain their independence, and for their families who need extra caregiving support.</p></li>
+               </ul>
+            </li>
+         </ul>
+       </div>
+   </nav>
 </div>
 
-<hr/>
-    <!-- HOME Section -->
-
+  <!-- The flexible grid (content) -->
+  <div class="row">
+    <div class="side">
+      <h3>Welcome to the Wayback Machine.</h3>
+      <img class="glasses" src="./img/glasses.jpg" />
+    <aside>
+        <p>A new, imaginary, augmented reality, wearable mnemonic “device” is about to come to the aid of everyone who has had a momentary memory lapse. For those times when we can remember someone’s face, but not their name, or when we arrive at the grocery store and realize we have forgotten our lists, the “NewMonocle” or “MneMonocle”  works in tandem with a hearing aid to recognize our surroundings and whisper a hint in our ear.</p>
+    </aside>
+</div>
+<br>  
+      <!-- <div class="fakeimg" style="height:60px;">
+      <div class="fakeimg" style="height:60px;">Image</div><br>
+      <div class="fakeimg" style="height:60px;">Image</div> -->
+    </div>
+    <div class="main">
     <section id="home">
         <h2>Get the most from your golden years.</h2>
-        <img class="glasses" src="./img/glasses.jpg" />
-        <figcaption>Model 1.0.</figcaption>
+
+    <p>Designed with seniors in mind, the MneMonocle pronounced "nemm-on-ic-ell", a combination of the mnemonic device and the monocle, or single-lens eyepiece.</p>
+  
+
     </section>
 
     <!-- CONTENT Section -->
@@ -75,25 +91,31 @@
     <section id="content">
         <h1>Augmented Reality for Everyone.</h1>
     
-        <div class="iframes">
+        <div class="iframes fakeimg">
             <iframe width="420" height="236" src="https://www.youtube.com/embed/xrWrqG1u5rE?si=LmX1D76VHH2quE0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>  
             </iframe>
               <img src="./img/podcast-cover.png" class="cover" alt="cover image for Emerging Tech podcast"/>
             <iframe width="35%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1966142711&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
             </iframe>
-        </div>
-        <img src="./img/Infographic.png" class="info" alt="infographic about the MneMonocle">
+        <!-- <img src="./img/Infographic.png" class="info" alt="infographic about the MneMonocle"> -->
+        <img src="./img/info-1.png" class="info" alt="infographic about the MneMonocle">
+        <img src="./img/info-2.png" class="info" alt="infographic about the MneMonocle">     
+        <img src="./img/info-3.png" class="info" alt="infographic about the MneMonocle">
+        <img src="./img/info-4.png" class="info" alt="infographic about the MneMonocle">
+        <img src="./img/info-5.png" class="info" alt="infographic about the MneMonocle">
+    </div>
         </section>
 
         <!-- ABOUT Section -->
          
         <section id="about">
             <h2>Acknowledgements</h2>
+            <h1>Sources</h1>
+
         </section>
    
-   
 </div>
-  <footer>
+<footer>
     <p class="foot">&copy;2024 Emerging Technologies.</p> 
 </footer>
 </body>
