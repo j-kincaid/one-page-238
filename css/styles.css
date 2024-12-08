@@ -135,7 +135,6 @@ nav#navigation {
     flex-wrap: wrap;
   }
   
-  /* Create two unequal columns that sits next to each other */
   /* Sidebar/left column */
   .side {
     flex: 30%;
@@ -156,10 +155,23 @@ section#social {
     padding: 3vw;
 }
 
-section#home,
+
 nav#navigation {
     background: radial-gradient(ellipse farthest-corner at right bottom, #E5B395 0%, #FEEED6 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
     radial-gradient(ellipse farthest-corner at left top, #bff2f1, #ab9283 8%, #E7EEF1 25%, #9b8c84 62.5%, #161208 100%);
+}
+
+section#home {
+  padding: 2%;
+  background-color: #FEEED6;
+  color: #000;
+}
+
+img.menu-img {
+  border: none;
+  float: right;
+  margin-right: 2.75em;
+  max-width: 50%;
 }
 
 h1 {
@@ -310,15 +322,8 @@ p.card-title {
     padding: 20px;
   }
   
-  /* Main column */
-  .main {
-    flex: 70%;
-    background-color: white;
-    padding: 20px;
-  }
-  
   /* Fake image, just for this example */
-  .fakeimg {
+  .box {
     background-color: #aaa;
     width: 100%;
     padding: 20px;
